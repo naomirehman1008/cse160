@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Mining for Diamonds</title>
+    </head>
+    <script src="something_awesome.js"></script>
+    <script src="../../lib/cuon-matrix-cse160.js"></script>
+    <script src="../../lib/cuon-utils.js"></script>
+    <script src="../../lib/webgl-debug.js"></script>
+    <script src="../../lib/webgl-utils.js"></script>
+    <body onload="main()">
+        <div>
+            <text font="30">Mining for Diamonds!</text>
+        </div>
+        <canvas id="webgl" width="400" height="400" style="background-color: black";>
+        Please use a browser that supports "canvas"
+        </canvas>
+        <div>
+            <button type="button" id="start" onclick="startGame()">Start Game</button>
+        </div>
+        <div>
+            <text id="score"></text>
+        </div>
+        <div>
+            <text id="time"></text>
+        </div>
+        <div>
+            <text>Rules: get the diamonds, but beware of quartz! You have 2 minutes. Feel free to use the demo buttons below to see which shape is which.</text>
+        </div>
+        <div>
+            <text>Diamond: +10$</text>
+            <button type="button" id="diamond" onclick="showShape('diamond')">Show Diamond</button>
+        </div>
+        <div>
+            <text>Quartz: -20$</text>
+            <button type="button" id="quartz" onclick="showShape('quartz')">Show Quartz</button>
+        </div>
+        <div>
+            <text>If you miss: -5$</text>
+        </div>
+    </body>
+</html>
